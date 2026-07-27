@@ -6,62 +6,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Time Tracking Dashboard</title>
   </head>
-  <body>
+  <body class="bg-[#0F1424] text-white font-light">
+    <main class="font-[Rubik] flex flex-col justify-center items-center mt-20 mb-20 gap-5"> 
+      <section class="bg-[#1C1F4A] rounded-xl max-h-[22em] pt-0 pr-0 pl-0"> <!-- report for-->
+        <div class="flex flex-row nowrap bg-[#5847EB] rounded-xl pt-5 pb-5 justify-center items-center"> <!-- profile wrapper-->
+          <div class="flex flex-col order-1"> 
+            <h1 class="text-[0.8em]">Report for</h1>
+            <h2 class="text-[1.5em]">Jeremy Robson</h2>
+          </div>
+        <img src="images/image-jeremy.png" alt="profile picture" class="w-20 mr-10 border-3 rounded-[50%]">
+        </div>
+        <div class="flex flex-row m-[-15px] justify-evenly"> 
+          <h3>Daily</h3>
+          <h3>Weekly</h3>
+          <h3>Monthly</h3>
+        </div>
+      </section> 
+      <section> <!-- work card -->
+        <div class="background-card bg-[#FF8C66]"> <!-- work background card !--> 
+          <img src="images/icon-work.svg" alt="work-background-image">
+        </div>
+        <h4>Work</h4>
+          5hrs <!-- daily -->
+          Previous - 7hrs <!-- daily -->
+          32hrs <!-- weekly -->
+          Previous - 36hrs <!-- weekly -->
+          103hrs <!-- monthly -->
+          Previous - 128hrs <!-- monthly -->
+      </section>
+      <section> <!-- play card -->
+        <div class="background-card bg-[#56C2E6]"> <!-- play background card -->
+          <img src="images/icon-play.svg" alt="play-background-image"> 
+        </div>
+        <h4>Play</h4>
+          1hr <!-- daily -->
+          Previous - 2hrs <!-- daily -->
+          10hrs <!-- weekly -->
+          Previous - 8hrs <!-- weekly -->
+          23hrs <!-- monthly -->
+          Previous - 29hrs <!-- monthly -->
+      </section>
+      <section> <!-- study card -->
+        <div class="background-card bg-[#FF5C7C]"> <!-- study background card -->
+          <img src="images/icon-study.svg" alt="study-background-image"> 
+        </div>
+        <h4>Study</h4>
+          0hrs <!-- daily -->
+          Previous - 1hr <!-- daily -->
+          4hrs <!-- weekly -->
+          Previous - 7hrs <!-- weekly -->
+          13hrs <!-- monthly -->
+          Previous - 19hrs <!-- monthly -->
+      </section>
+      <section> <!-- exercise card -->
+        <div class="background-card bg-[#4ACF81]"> <!-- exercise background card -->
+          <img src="images/icon-exercise.svg" alt="exercise-background-image"> 
+        </div>
+        <h4>Exercise</h4>
+          1hr <!-- daily -->
+          Previous - 1hr <!-- daily -->
+          4hrs <!-- weekly -->
+          Previous - 5hrs <!-- weekly -->
+          11hrs <!-- monthly -->
+          Previous - 18hrs <!-- monthly -->
+      </section>
+      <section> <!-- social card -->
+        <div class="background-card bg-[#7536D3]"> <!-- social background card -->
+          <img src="images/icon-social.svg" alt="social-background-image"> 
+        </div>
+        <h4>Social</h4>
+          1hr <!-- daily -->
+          Previous - 3hrs <!-- daily -->
+          5hrs <!-- weekly -->
+          Previous - 10hrs <!-- weekly -->
+          21hrs <!-- monthly -->
+          Previous - 23hrs <!-- monthly -->
+      </section>
+      <section> <!-- selfcare card -->
+        <div class="background-card bg-[#F1C65B]"> <!-- selfcare background card -->
+          <img src="images/icon-self-care.svg" alt="self-care-background-image"> 
+        </div>
+        <h4>Self Care</h4>
+          0hrs <!-- daily -->
+          Previous - 1hr <!-- daily -->
+          2hrs <!-- weekly -->
+          Previous - 2hrs <!-- weekly -->
+          7hrs <!-- monthly -->
+          Previous - 11hrs <!-- monthly -->
+      </section>
+    </main>
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
-    Report for
-    Jeremy Robson
-
-    Daily
-    Weekly
-    Monthly
-
-    Work
-    5hrs <!-- daily -->
-    Previous - 7hrs <!-- daily -->
-    32hrs <!-- weekly -->
-    Previous - 36hrs <!-- weekly -->
-    103hrs <!-- monthly -->
-    Previous - 128hrs <!-- monthly -->
-
-    Play
-    1hr <!-- daily -->
-    Previous - 2hrs <!-- daily -->
-    10hrs <!-- weekly -->
-    Previous - 8hrs <!-- weekly -->
-    23hrs <!-- monthly -->
-    Previous - 29hrs <!-- monthly -->
-
-    Study
-    0hrs <!-- daily -->
-    Previous - 1hr <!-- daily -->
-    4hrs <!-- weekly -->
-    Previous - 7hrs <!-- weekly -->
-    13hrs <!-- monthly -->
-    Previous - 19hrs <!-- monthly -->
-
-    Exercise
-    1hr <!-- daily -->
-    Previous - 1hr <!-- daily -->
-    4hrs <!-- weekly -->
-    Previous - 5hrs <!-- weekly -->
-    11hrs <!-- monthly -->
-    Previous - 18hrs <!-- monthly -->
-
-    Social
-    1hr <!-- daily -->
-    Previous - 3hrs <!-- daily -->
-    5hrs <!-- weekly -->
-    Previous - 10hrs <!-- weekly -->
-    21hrs <!-- monthly -->
-    Previous - 23hrs <!-- monthly -->
-
-    Self Care
-    0hrs <!-- daily -->
-    Previous - 1hr <!-- daily -->
-    2hrs <!-- weekly -->
-    Previous - 2hrs <!-- weekly -->
-    7hrs <!-- monthly -->
-    Previous - 11hrs <!-- monthly -->
   </body>
 </html>
