@@ -2,17 +2,28 @@
 @import "tailwindcss";
 
 h3 { 
-  @apply p-10 m-0 text-[0.9em]; 
+  @apply p-10 m-0 text-[0.9em] text-[#6F76C8]; 
 }
 
+h4 { 
+  @apply col-1 row-1 text-[1.2em]; 
+}
+
+/* add active state on h3 text */ 
+
 section { 
-  @apply bg-[#1C1F4A] rounded-xl max-h-[22em] pt-0 pr-0 pl-0 max-w-[20em];
+  @apply bg-[#1C1F4A] rounded-xl max-h-[22em] w-90; /* used to be max-w-[22em] */ 
 }
 
 .background-card { 
-  @apply rounded-xl rounded-b-none flex flex-row justify-end h-10; 
+  @apply rounded-xl rounded-b-none flex flex-row justify-end h-10 overflow-hidden; 
 }
 
-.background-card img { 
-  @apply mr-5; 
+.top-card { 
+  @apply h-28 grid grid-cols-2 grid-rows-2 p-5 items-center rounded-t-xl;  
 }
+
+.bg-icon { 
+  @apply w-20 h-20 mr-5; /* nudge it up a bit */
+}
+
