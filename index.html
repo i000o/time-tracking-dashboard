@@ -5,6 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Time Tracking Dashboard</title>
+    <!-- css not linked, does this matter? -->
   </head>
   <body class="bg-[#0F1424] text-white font-light">
     <main class="font-[Rubik] flex flex-col justify-center items-center mt-20 mb-20 gap-5"> 
@@ -16,20 +17,25 @@
           </div>
         <img src="images/image-jeremy.png" alt="profile picture" class="w-20 mr-10 border-3 rounded-[50%]">
         </div>
-        <div class="flex flex-row m-[-15px] justify-evenly"> 
-          <h3>Daily</h3>
-          <h3>Weekly</h3>
-          <h3>Monthly</h3>
+        <div class="flex flex-row m-[-15px] justify-evenly"> <!-- button container-->
+          <button type="button" id="daily-btn" data-path="daily">
+            <h3>Daily</h3>
+          </button>
+          <button type="button" id="weekly-btn" data-path="weekly">
+            <h3>Weekly</h3>
+          </button>
+          <button type="button" id="monthly-btn" data-path="monthly">
+            <h3>Monthly</h3>
+          </button>
         </div>
       </section> 
-      <section> <!-- work card -->
+      <section data-path="Work" class="card"> <!-- work card -->
         <div class="background-card bg-[#FF8C66]"> <!-- work back card --> 
           <img src="images/icon-work.svg" alt="work-background-image" class="bg-icon">
         </div>
         <div class="top-card"> <!-- work top card -->
           <h4 class="col-1 row-1 text-[1.2em]">Work</h4>
           <img src="images/icon-ellipsis.svg" alt="ellipse-icon" class="col-2 row-1 justify-self-end"> 
-          <p class="row-2 col-1 text-[2em]">32hrs</p> <!-- placeholder -->
           <p class="row-2 col-2 text-right text-[#6F76C8]">Last Week - 36hrs</p> <!-- placeholder -->
           <span class="hidden"> 
             5hrs <!-- daily -->
@@ -39,9 +45,11 @@
             103hrs <!-- monthly -->
             Previous - 128hrs monthly
           </span> 
+          <span class="current-hours"></span>
+          <span class="previous-hours"></span>
         </div>
       </section>
-      <section> <!-- play card -->
+      <section data-path="Play" class="card"> <!-- play card -->
         <div class="background-card bg-[#56C2E6]"> <!-- play background card -->
           <img src="images/icon-play.svg" alt="play-background-image" class="bg-icon"> 
         </div>
@@ -60,7 +68,7 @@
           </span>        
         </div>
       </section>
-      <section> <!-- study card -->
+      <section data-path="Study" class="card"> <!-- study card -->
         <div class="background-card bg-[#FF5C7C]"> <!-- study background card -->
           <img src="images/icon-study.svg" alt="study-background-image"> 
         </div>
@@ -72,7 +80,7 @@
           13hrs <!-- monthly -->
           Previous - 19hrs <!-- monthly -->
       </section>
-      <section> <!-- exercise card -->
+      <section data-path="Exercise" class="card"> <!-- exercise card -->
         <div class="background-card bg-[#4ACF81]"> <!-- exercise background card -->
           <img src="images/icon-exercise.svg" alt="exercise-background-image"> 
         </div>
@@ -84,7 +92,7 @@
           11hrs <!-- monthly -->
           Previous - 18hrs <!-- monthly -->
       </section>
-      <section> <!-- social card -->
+      <section data-path="Social" class="card"> <!-- social card -->
         <div class="background-card bg-[#7536D3]"> <!-- social background card -->
           <img src="images/icon-social.svg" alt="social-background-image" class="bg-icon"> 
         </div>
@@ -96,7 +104,7 @@
           21hrs <!-- monthly -->
           Previous - 23hrs <!-- monthly -->
       </section>
-      <section> <!-- selfcare card -->
+      <section data-path="Selfcare" class="card"> <!-- selfcare card -->
         <div class="background-card bg-[#F1C65B]"> <!-- selfcare background card -->
           <img src="images/icon-self-care.svg" alt="self-care-background-image" class="bg-icon"> 
         </div>
