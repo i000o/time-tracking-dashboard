@@ -27,3 +27,15 @@ section {
   @apply w-20 h-20 mr-5; /* nudge it up a bit */
 }
 
+button[type="button"] { 
+  @apply cursor-pointer; 
+}
+
+.previous-hours { 
+  @apply row-2 col-2 text-right text-[#6F76C8];
+}
+
+.current-hours { 
+  @apply text-[1.5em]; 
+}
+
