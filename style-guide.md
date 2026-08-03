@@ -29,6 +29,20 @@ The designs were created to the following widths:
 - Purple 500: hsl(235, 45%, 61%)
 - Navy 200: hsl(236, 100%, 87%)
 
+| Name                   | HSL                 | Hex       |
+| ---------------------- | ------------------- | --------- | ---------- |
+| Purple 600             | hsl(246, 80%, 60%)  | `#5847EB` |
+| Orange 300 (work)      | hsl(15, 100%, 70%)  | `#FF8C66` |
+| Blue 300 (play)        | hsl(195, 74%, 62%)  | `#56C2E6` |
+| Pink 400 (study)       | hsl(348, 100%, 68%) | `#FF5C7C` |
+| Green 400 (exercise)   | hsl(145, 58%, 55%)  | `#4ACF81` |
+| Purple 700 (social)    | hsl(264, 64%, 52%)  | `#7536D3` |
+| Yellow 300 (self care) | hsl(43, 84%, 65%)   | `#F1C65B` |
+| Navy 950               | hsl(226, 43%, 10%)  | `#0F1424` | background |
+| Navy 900               | hsl(235, 46%, 20%)  | `#1C1F4A` |
+| Purple 500             | hsl(235, 45%, 61%)  | `#6F76C8` |
+| Navy 200               | hsl(236, 100%, 87%) | `#BDC1FF` |
+
 ## Typography
 
 ### Body Copy

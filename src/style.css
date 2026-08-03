@@ -31,11 +31,15 @@ button[type="button"] {
   @apply cursor-pointer; 
 }
 
+button h3 {
+  @apply active:text-white; /* doesnt stick */
+}
+
 .previous-hours { 
   @apply row-2 col-2 text-right text-[#6F76C8];
 }
 
 .current-hours { 
-  @apply text-[1.5em]; 
+  @apply row-2 col-1 text-[2em]; 
 }
 
