@@ -23,6 +23,9 @@ function updateDisplay(event) {
     const clickedButton = event.currentTarget; 
     const period = clickedButton.dataset.path; // stores selected button 
 
+    document.querySelector('.timeframe.active')?.classList.remove('active');
+    clickedButton.classList.add('active');
+
     // loop through the cards (work, social etc.) and inject data accordingly 
     cards.forEach((card) => { 
         const categoryTitle = card.dataset.path; 
@@ -42,11 +45,12 @@ function updateDisplay(event) {
 
         const previousSpan = card.querySelector(".previous-hours"); 
         previousSpan.textContent = `${previousLabels[period]} - ${previousValue}hrs`; 
-        previousSpan.style.display = 'block'; 
+        previousSpan.style.display = 'block';
     });
 }
 
 buttons.forEach((button) => { 
     button.addEventListener("click", updateDisplay);
 });
+
 

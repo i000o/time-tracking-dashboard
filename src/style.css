@@ -37,3 +37,6 @@ button[type="button"] {
   @apply row-2 col-1 text-[2em]; 
 }
 
+.timeframe.active h3 { 
+  @apply text-white; 
+}
