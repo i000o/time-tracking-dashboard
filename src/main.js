@@ -6,7 +6,9 @@ async function fetchData() {
     const response = await fetch('./data.json');
     hours = await response.json(); 
 
-    showHours(hours); 
+    // showHours(hours); 
+
+    document.getElementById('daily-btn').click();
 }
 
 fetchData(); 
@@ -52,5 +54,4 @@ function updateDisplay(event) {
 buttons.forEach((button) => { 
     button.addEventListener("click", updateDisplay);
 });
-
 
