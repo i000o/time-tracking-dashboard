@@ -9,8 +9,6 @@ h4 {
   @apply col-1 row-1 text-[1.2em]; 
 }
 
-/* add active state on h3 text */ 
-
 section { 
   @apply bg-[#1C1F4A] rounded-xl max-h-[22em] w-90; /* used to be max-w-[22em] */ 
 }
@@ -29,10 +27,6 @@ section {
 
 button[type="button"] { 
   @apply cursor-pointer; 
-}
-
-button h3 {
-  @apply active:text-white; /* doesnt stick */
 }
 
 .previous-hours { 
