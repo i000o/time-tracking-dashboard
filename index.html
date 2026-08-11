@@ -10,7 +10,7 @@
   <body class="bg-[#0F1424] text-white font-light">
     <main class="font-[Rubik] flex flex-col justify-center items-center mt-20 mb-20 gap-5"> 
       <section class="bg-[#1C1F4A] rounded-xl max-h-[22em]"> <!-- report for card-->
-        <div class="flex flex-row nowrap bg-[#5847EB] rounded-xl pt-5 pb-5 justify-center items-center"> <!-- profile wrapper-->
+        <div class="flex flex-row nowrap bg-[#5847EB] rounded-xl pt-5 pb-5 justify-center items-center"> <!-- profile container-->
           <div class="flex flex-col order-1"> 
             <h1 class="text-[0.8em] text-[#8a94ff]">Report for</h1>
             <h2 class="text-[1.5em]">Jeremy Robson</h2>
@@ -29,72 +29,75 @@
           </button>
         </div>
       </section> 
-      <section data-path="Work" class="card"> <!-- work card -->
-        <div class="background-card bg-[#FF8C66]"> <!-- work back card --> 
-          <img src="images/icon-work.svg" alt="work-background-image" class="bg-icon">
-        </div>
-        <div class="top-card"> <!-- work top card -->
-          <h4 class="col-1 row-1 text-[1.2em]">Work</h4>
-          <img src="images/icon-ellipsis.svg" alt="ellipse-icon" class="col-2 row-1 justify-self-end"> 
-          <span class="current-hours"></span>
-          <span class="previous-hours"></span>
-        </div>
-      </section>
-      <section data-path="Play" class="card"> <!-- play card -->
-        <div class="background-card bg-[#56C2E6]"> <!-- play background card -->
-          <img src="images/icon-play.svg" alt="play-background-image" class="bg-icon"> 
-        </div>
-        <div class="top-card">
-          <h4>Play</h4>          
-          <img src="images/icon-ellipsis.svg" alt="ellipse-icon" class="col-2 row-1 justify-self-end"> 
-          <span class="current-hours"></span>
-          <span class="previous-hours"></span>      
-        </div>
-      </section>
-      <section data-path="Study" class="card"> <!-- study card -->
-        <div class="background-card bg-[#FF5C7C]"> <!-- study background card -->
-          <img src="images/icon-study.svg" alt="study-background-image"> 
-        </div>
-        <div class="top-card"> 
-          <h4>Study</h4>
-          <img src="images/icon-ellipsis.svg" alt="ellipse-icon" class="col-2 row-1 justify-self-end"> 
-          <span class="current-hours"></span>
-          <span class="previous-hours"></span>     
-        </div>
-      </section>
-      <section data-path="Exercise" class="card"> <!-- exercise card -->
-        <div class="background-card bg-[#4ACF81]"> <!-- exercise background card -->
-          <img src="images/icon-exercise.svg" alt="exercise-background-image"> 
-        </div>
-        <div class="top-card"> 
-          <h4>Exercise</h4>
-          <img src="images/icon-ellipsis.svg" alt="ellipse-icon" class="col-2 row-1 justify-self-end"> 
-          <span class="current-hours"></span>
-          <span class="previous-hours"></span>     
-        </div>
-      </section>
-      <section data-path="Social" class="card"> <!-- social card -->
-        <div class="background-card bg-[#7536D3]"> <!-- social background card -->
-          <img src="images/icon-social.svg" alt="social-background-image" class="bg-icon"> 
-        </div>
-        <div class="top-card"> 
-          <h4>Social</h4>
-          <img src="images/icon-ellipsis.svg" alt="ellipse-icon" class="col-2 row-1 justify-self-end"> 
-          <span class="current-hours"></span>
-          <span class="previous-hours"></span>     
-        </div>
-      </section>
-      <section data-path="Self Care" class="card"> <!-- selfcare card -->
-        <div class="background-card bg-[#F1C65B]"> <!-- selfcare background card -->
-          <img src="images/icon-self-care.svg" alt="self-care-background-image" class="bg-icon"> 
-        </div>
-        <div class="top-card"> 
-          <h4>Self Care</h4>
-          <img src="images/icon-ellipsis.svg" alt="ellipse-icon" class="col-2 row-1 justify-self-end"> 
-          <span class="current-hours"></span>
-          <span class="previous-hours"></span>     
-        </div>
-      </section>
+      <div>
+        <section data-path="Work" class="card"> <!-- work card -->
+          <div class="background-card bg-[#FF8C66]"> <!-- work back card --> 
+            <img src="images/icon-work.svg" alt="work-background-image" class="bg-icon">
+          </div>
+          <div class="top-card"> <!-- work top card -->
+            <h4 class="col-1 row-1 text-[1.2em]">Work</h4>
+            <img src="images/icon-ellipsis.svg" alt="ellipse-icon" class="col-2 row-1 justify-self-end"> 
+            <span class="current-hours"></span>
+            <span class="previous-hours"></span>
+          </div>
+        </section>
+        <section data-path="Play" class="card"> <!-- play card -->
+          <div class="background-card bg-[#56C2E6]"> <!-- play background card -->
+            <img src="images/icon-play.svg" alt="play-background-image" class="bg-icon"> 
+          </div>
+          <div class="top-card">
+            <h4>Play</h4>          
+            <img src="images/icon-ellipsis.svg" alt="ellipse-icon" class="col-2 row-1 justify-self-end"> 
+            <span class="current-hours"></span>
+            <span class="previous-hours"></span>      
+          </div>
+        </section>
+        <section data-path="Study" class="card"> <!-- study card -->
+          <div class="background-card bg-[#FF5C7C]"> <!-- study background card -->
+            <img src="images/icon-study.svg" alt="study-background-image"> 
+          </div>
+          <div class="top-card"> 
+            <h4>Study</h4>
+            <img src="images/icon-ellipsis.svg" alt="ellipse-icon" class="col-2 row-1 justify-self-end"> 
+            <span class="current-hours"></span>
+            <span class="previous-hours"></span>     
+          </div>
+        </section>
+        <section data-path="Exercise" class="card"> <!-- exercise card -->
+          <div class="background-card bg-[#4ACF81]"> <!-- exercise background card -->
+            <img src="images/icon-exercise.svg" alt="exercise-background-image"> 
+          </div>
+          <div class="top-card"> 
+            <h4>Exercise</h4>
+            <img src="images/icon-ellipsis.svg" alt="ellipse-icon" class="col-2 row-1 justify-self-end"> 
+            <span class="current-hours"></span>
+            <span class="previous-hours"></span>     
+          </div>
+        </section>
+        <section data-path="Social" class="card"> <!-- social card -->
+          <div class="background-card bg-[#7536D3]"> <!-- social background card -->
+            <img src="images/icon-social.svg" alt="social-background-image" class="bg-icon"> 
+          </div>
+          <div class="top-card"> 
+            <h4>Social</h4>
+            <img src="images/icon-ellipsis.svg" alt="ellipse-icon" class="col-2 row-1 justify-self-end"> 
+            <span class="current-hours"></span>
+            <span class="previous-hours"></span>     
+          </div>
+        </section>
+        <section data-path="Self Care" class="card"> <!-- selfcare card -->
+          <div class="background-card bg-[#F1C65B]"> <!-- selfcare background card -->
+            <img src="images/icon-self-care.svg" alt="self-care-background-image" class="bg-icon"> 
+          </div>
+          <div class="top-card"> 
+            <h4>Self Care</h4>
+            <img src="images/icon-ellipsis.svg" alt="ellipse-icon" class="col-2 row-1 justify-self-end"> 
+            <span class="current-hours"></span>
+            <span class="previous-hours"></span>     
+          </div>
+        </section>
+      </div> <!-- cards container-->
+
     </main>
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
