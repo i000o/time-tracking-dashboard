@@ -3,6 +3,8 @@
 [Live Site URL](https://i000o.github.io/time-tracking-dashboard/)  
 ![Outcome](/images/mobile-screenshot.png)
 
+---
+
 ## Table of contents
 
 - [Purpose & Scope](#purpose-and-scope)
