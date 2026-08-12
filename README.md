@@ -16,7 +16,7 @@
 
 ## Purpose & Scope.
 
-A dashboard that reports a user's tracked hours across categories (Work, Play, Social, etc.), switchable between Daily, Weekly, and Monthly views. Its features include:
+A dashboard that reports a user's tracked hours across categories (Work, Play, Social, etc.), switchable between Daily, Weekly, and Monthly views. The design brief belongs to [Frontend Mentor](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw). Its features include:
 
 - Fetches category and timeframe data from local JSON and renders it into a set of cards.
 - A single set of Daily/Weekly/Monthly controls updates every card simultaneously, showing current and previous period values.
